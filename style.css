@@ -20,7 +20,7 @@
     margin: auto;
 }
 
-section__subheader{
+.section__subheader{
     font-size: 1.2rem;
     font-weight: 500;
     color: var(--text-light);
@@ -227,6 +227,93 @@ img.header__image__bg{
     z-index: -1;
 }
 
+.intro__grid{
+    margin-top: 4rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.intro__card{
+    text-align: center;
+}
+
+.intro__card div{
+    max-width: fit-content;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.intro__card:nth-child(1) div{
+    background-image: url(assets/intro-1-bg.png);
+}
+
+.intro__card:nth-child(2) div{
+    background-image: url(assets/intro-2-bg.png);
+}
+
+.intro__card:nth-child(3) div{
+    background-image: url(assets/intro-3-bg.png);
+}
+
+.intro__card div img{
+    width: unset;
+    height: 75px;
+}
+
+.intro__card h4{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.intro__card p{
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
+.intro__card a{
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border: 2px solid;
+    border-radius: 5rem;
+    transition: 0.3s;
+}
+
+.intro__card:nth-child(1) a{
+    color: #ffc737;
+    border-color: #ffc737;
+}
+
+.intro__card:nth-child(1) a:hover{
+    background-color: #ffc737;
+    color: var(--white);
+}
+
+.intro__card:nth-child(2) a{
+    color: #257ae7;
+    border-color: #257ae7;
+}
+
+.intro__card:nth-child(2) a:hover{
+    background-color: #257ae7;
+    color: var(--white);
+}
+
+.intro__card:nth-child(3) a{
+    color: #cba9b6;
+    border-color: #cba9b6;
+}
+
+.intro__card:nth-child(3) a:hover{
+    background-color: #cba9b6;
+    color: var(--white);
+}
+
 @media(width > 540px){
     .header__content h1{
         font-size: 4.5rem;
@@ -235,6 +322,10 @@ img.header__image__bg{
 
     .header__content h1 span{
         font-size: 6rem;
+    }
+
+    .intro__grid{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -300,5 +391,9 @@ img.header__image__bg{
 
     .header__image img{
         max-width: 500px;
+    }
+
+    .intro__grid{
+        grid-template-columns: repeat(3, 1fr);
     }
 }
