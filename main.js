@@ -81,3 +81,8 @@ ScrollReveal().reveal(".about__content p", {
     delay: 1500,
 });
 
+ScrollReveal().reveal(".product__card", {
+    ...ScrollRevealOption,
+    interval: 500,
+});
+
