@@ -521,6 +521,96 @@ img.header__image__bg{
     grid-template-columns: repeat(2, 1fr);
 }
 
+.footer__container{
+    display: grid;
+    gap:  4rem 2rem;
+}
+
+.footer__logo a{
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-dark);    
+}
+
+.footer__col h4{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.footer__links{
+    display: grid;
+    gap: 1rem;
+}
+
+.footer__links a{
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.footer__links a:hover{
+    color: var(--primary-color);
+}
+
+.footer__col p{
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.footer__col form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--primary-color);
+    border-radius: 5rem;    
+}
+
+.footer__col form input{
+    padding-inline: 0.5rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--text-dark);
+    background-color: transparent;
+}
+
+.footer__col form button{
+    padding: 0.25rem 1.5rem;
+    outline: none;
+    border: none;
+    color: var(--text-dark);
+    font-size: 2rem;
+    background-color: var(--primary-color);
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+.footer__socials{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.footer__socials a{
+    display: inline-block;
+    padding: 5px 8px;
+    font-size: 1.125rem;
+    color: var(--text-dark);
+    background-color: var(--primary-color);
+    border-radius: 100%;
+}
+
+.footer__bar{
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    text-align: center;
+}
+
+
 @media(width > 540px){
     .header__content h1{
         font-size: 4.5rem;
@@ -541,6 +631,10 @@ img.header__image__bg{
 
     .instagram__grid{
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer__container{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -632,5 +726,9 @@ img.header__image__bg{
 
     .product__grid{
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer__container{
+        grid-template-columns: repeat(4, 1fr);
     }
 }
